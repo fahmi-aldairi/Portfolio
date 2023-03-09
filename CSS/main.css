@@ -1,0 +1,393 @@
+/* Start variables  */
+:root {
+  --main-color: #42a4f5;
+  --mainText-color: #ffffff;
+  --Sectionbg: #42a5f58a;
+  --transparent-color: rgb(15 116 143 / 40%);
+}
+
+/* End variables  */
+
+/*********************************/
+
+/* Start Global Ruled */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #1a237e;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 568px) {
+  .container {
+    width: 550px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Global Ruled */
+
+/*********************************/
+
+/* Start Components */
+.section {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: var(--Sectionbg);
+}
+
+.main-heading {
+  text-align: center;
+}
+
+.main-heading h2 {
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 50px;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background: #37474fb5;
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: -30px;
+}
+
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -38px;
+  background: black;
+}
+
+.main-heading h2:hover {
+  font-size: 50px;
+  color: #1a237e;
+  transition: 0.4s linear;
+}
+
+.main-heading p {
+  width: 550px;
+  margin: 0 auto 100px;
+  max-width: 100%;
+  line-height: 1.8;
+  color: var(--mainText-color);
+}
+
+/* End Components */
+
+/*********************************/
+
+/* Start Header */
+
+header {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  z-index: 3;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  min-height: 97px;
+}
+
+header .container::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  width: calc(100% - 30px);
+  height: 1px;
+  bottom: 16px;
+  left: 15px;
+}
+
+header .container .logo img {
+  height: 40px;
+}
+
+header .container nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .container nav .toggle-menu {
+  color: var(--mainText-color);
+}
+.container button {
+  background-color: transparent;
+  border: transparent;
+}
+.container button img {
+  width: 25px;
+  height: 18px;
+  position: absolute;
+  margin-left: 2px;
+}
+
+@media (min-width: 992px) {
+  header .container nav .toggle-menu {
+    display: none;
+  }
+}
+
+header .container nav ul {
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  header .container nav ul {
+    display: none;
+  }
+  header .container nav .toggle-menu:hover + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 83%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    backdrop-filter: blur(3px);
+  }
+  header .container nav ul li a {
+    padding: 15px !important;
+  }
+}
+
+header .container nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--mainText-color);
+  padding: 40px 10px;
+  transition: 0.3s;
+}
+
+header .container nav ul li a:hover {
+  color: var(--main-color);
+  border-bottom: 1.5px solid var(--main-color);
+  position: relative;
+  z-index: 2;
+}
+
+header .container .logo:hover {
+  height: 50px;
+  transition: 0.3s linear;
+}
+
+/* End Header */
+
+/*********************************/
+
+/* Start Landing */
+
+.landing {
+  min-height: 100vh;
+  background-color: #42a5f58a;
+  background-image: url(../image/blue-wood-pattern-4k_1553075190.jpg);
+  background-size: cover;
+  position: relative;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.landing .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 20%);
+}
+
+.landing .text {
+  color: var(--mainText-color);
+  position: absolute;
+  background-color: #42a5f58a;
+  backdrop-filter: blur(1px);
+  left: 0;
+  top: 45%;
+  transform: translateY(-55px);
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .landing .text {
+    top: 40%;
+    width: 100%;
+    justify-content: center;
+  }
+  .landing .text .content {
+    width: 100%;
+  }
+}
+
+.landing img {
+  width: 250px;
+  height: 320px;
+  float: left;
+}
+
+@media (max-width: 568px) {
+  .landing img {
+    width: 150px;
+    height: 178px;
+    float: inline-start;
+    position: absolute;
+    top: -60%;
+    left: 3%;
+  }
+}
+
+@media (max-width: 390px) {
+  .landing img {
+    width: 150px;
+    height: 178px;
+    float: inline-start;
+    position: absolute;
+    top: -40%;
+    left: 3%;
+  }
+}
+
+.landing .text .content {
+  max-width: 500px;
+}
+
+.landing .text .content h2 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 55px;
+  font-weight: bolder;
+}
+
+.landing .text .content p {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.landing i {
+  color: #ffffff;
+}
+
+.landing .change-background {
+  color: var(--mainText-color);
+  position: absolute;
+  top: 47%;
+  transform: translateY(-50px);
+}
+
+@media (max-width: 992px) {
+  .landing .change-background {
+    display: none;
+  }
+}
+
+/* End Landing */
+
+/*********************************/
+
+/* Start card-section */
+
+.card-section {
+  background-color: var(--Sectionbg);
+  display: flex;
+  justify-content: center;
+}
+
+/* Start card-section */
+
+/*********************************/
+
+/* Start Services */
+
+/* End Services */
+
+/*********************************/
+
+/* Start Portfolio */
+
+/* End Portfolio */
+
+/*********************************/
+
+/* Start about */
+
+/* End about */
+
+/*********************************/
+
+/* Start contact */
+
+/* End contact */
+
+/*********************************/
+
+/* Start Footer */
+
+/* End Footer */
+
+/*********************************/
