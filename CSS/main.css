@@ -1,6 +1,7 @@
 /* Start variables  */
 :root {
   --main-color: #42a4f5;
+  --main-header-color:#1a237e;
   --mainText-color: #ffffff;
   --Sesctionbg: #42a5f58a;
   --transparent-color: rgb(15 116 143 / 40%);
@@ -78,12 +79,12 @@ ul {
 }
 
 .main-heading h2 {
-  font-weight: normal;
   font-size: 40px;
   position: relative;
   margin-bottom: 50px;
   padding-top: 30px;
   text-transform: uppercase;
+  color: var(--main-header-color);
 }
 
 .main-heading h2::before {
@@ -112,13 +113,13 @@ ul {
 
 .main-heading h2:hover {
   font-size: 50px;
-  color: #1a237e;
+  color: var(--main-header-color);
   transition: 0.4s linear;
 }
 
 .main-heading p {
   width: 550px;
-  margin: 0 auto 100px;
+  margin: 0 auto 50px;
   max-width: 100%;
   line-height: 1.8;
   color: var(--mainText-color);
@@ -148,7 +149,7 @@ header .container {
 header .container::after {
   content: "";
   position: absolute;
-  background-color: #ffffff;
+  background-color: var(--mainText-color);
   width: calc(100% - 30px);
   height: 1px;
   bottom: 16px;
@@ -238,7 +239,7 @@ header .container .logo:hover {
 
 .landing {
   min-height: 100vh;
-  background-color: #42a5f58a;
+  background-color: var(--Sesctionbg);
   background-image: url(../image/blue-wood-pattern-4k_1553075190.jpg);
   background-size: cover;
   position: relative;
@@ -258,7 +259,7 @@ header .container .logo:hover {
 .landing .text {
   color: var(--mainText-color);
   position: absolute;
-  background-color: #42a5f58a;
+  background-color: var(--Sesctionbg);
   backdrop-filter: blur(1px);
   left: 0;
   top: 45%;
@@ -289,33 +290,43 @@ header .container .logo:hover {
 
 @media (max-width: 992px) {
   .landing img {
-    width: 150px;
-    height: 178px;
+    width: 20vw;
+    height: 23vw;
     float: inline-start;
     position: absolute;
-    top: -45%;
-    left: 3%;
+    top: -50%;
+    left: 2%;
   }
 }
+/* @media (max-width: 992px) {
+  .landing img {
+    width: 200px;
+    height: 200px;
+    float: inline-start;
+    position: absolute;
+    top: -50%;
+    left: 2%;
+  }
+} */
 
-@media (max-width: 390px) {
+/* @media (max-width: 390px) {
   .landing img {
     width: 150px;
-    height: 178px;
+    height: 160px;
     float: inline-start;
     position: absolute;
-    top: -40%;
-    left: 3%;
+    top: -38%;
+    left: 30%;
   }
-}
+} */
 
 .landing .text .content {
   max-width: 500px;
 }
 
-.landing .text .content h2 {
-  font-size: 30px;
-  font-weight: normal;
+.landing .text .content h1 {
+  font-size: 35px;
+  color: var(--main-header-color);
   line-height: 1.5;
   margin-bottom: 55px;
   font-weight: bolder;
@@ -328,7 +339,7 @@ header .container .logo:hover {
 }
 
 .landing i {
-  color: #ffffff;
+  color: var(--mainText-color);
 }
 
 .landing .change-background {
@@ -366,7 +377,11 @@ header .container .logo:hover {
   transition: linear 0.2s;
 }
 .card .btn-primary {
-  color: #1a237e;
+  color: var(--mainText-color);
+  font-weight: 100;
+  background-color: var(--main-header-color);
+  border-radius: 20px;
+  box-shadow: 3px 2px #1a237e42;
 }
 
 @media (max-width: 992px) {
@@ -418,6 +433,10 @@ header .container .logo:hover {
 /*********************************/
 
 /* Start Recent-works */
+.R-Work {
+  margin-bottom: 10rem;
+}
+
 @media (max-width: 768px) {
   .Rw-2 {
     display: none;
@@ -441,6 +460,20 @@ header .container .logo:hover {
   .Rw-1 .arrow-l {
     display: none;
   }
+}
+
+.Rw-1 a:hover,
+.Rw-2 a:hover {
+  font-size: 1.2rem;
+  transition: linear 0.2s;
+}
+.Rw-1 .btn-primary,
+.Rw-2 .btn-primary {
+  color: var(--mainText-color);
+  font-weight: 100;
+  background-color: var(--main-header-color);
+  border-radius: 20px;
+  box-shadow: 3px 2px #1a237e42;
 }
 /* End Recent-works *
 
@@ -466,6 +499,58 @@ header .container .logo:hover {
 
 /* Start Footer */
 
+footer .container-fluid {
+  width: 100%;
+  height: 21rem;
+  background-color: var(--main-header-color);
+}
+
+.REC {
+  position: absolute;
+  width: 20rem;
+  height: 16rem;
+  background-color: var(--main-header-color);
+  transform: matrix(0.74, 0.67, -0.74, 0.67, 0, 0);
+  border-radius: 50px 30px 0 0;
+  border-top: 5px solid var(--Sesctionbg);
+}
+
+.REC div p {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 800;
+  rotate: -44deg;
+  padding: 0;
+  margin: 0;
+  left: -1rem;
+  bottom: 9rem;
+}
+
+@media (max-width: 768px) {
+  footer .container-fluid {
+    width: 100%;
+    height: 10rem;
+    background-color: var(--main-header-color);
+  }
+  .REC {
+    position: absolute;
+    width: 11rem;
+    height: 6rem;
+    background-color: var(--main-header-color);
+    transform: matrix(0.74, 0.67, -0.74, 0.67, 0, 0);
+    border-radius: 50px 30px 0 0;
+  }
+  .REC div p {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 800;
+    rotate: -44deg;
+    padding: 0;
+    margin: 0;
+    left: -1rem;
+    bottom: 2rem;
+  }
+}
 /* End Footer */
 
 /*********************************/
