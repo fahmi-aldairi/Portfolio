@@ -2,7 +2,7 @@
 :root {
   --main-color: #42a4f5;
   --mainText-color: #ffffff;
-  --Sectionbg: #42a5f58a;
+  --Sesctionbg: #42a5f58a;
   --transparent-color: rgb(15 116 143 / 40%);
 }
 
@@ -26,7 +26,6 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #1a237e;
 }
 
 ul {
@@ -72,7 +71,6 @@ ul {
 .section {
   padding-top: 50px;
   padding-bottom: 20px;
-  background-color: var(--Sectionbg);
 }
 
 .main-heading {
@@ -289,13 +287,13 @@ header .container .logo:hover {
   float: left;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 992px) {
   .landing img {
     width: 150px;
     height: 178px;
     float: inline-start;
     position: absolute;
-    top: -60%;
+    top: -45%;
     left: 3%;
   }
 }
@@ -353,18 +351,98 @@ header .container .logo:hover {
 /* Start card-section */
 
 .card-section {
-  background-color: var(--Sectionbg);
   display: flex;
   justify-content: center;
 }
 
-/* Start card-section */
+@media (max-width: 992px) {
+  .card-section {
+    align-items: center;
+  }
+}
+
+.Cd-button:hover {
+  font-size: 1.2rem;
+  transition: linear 0.2s;
+}
+.card .btn-primary {
+  color: #1a237e;
+}
+
+@media (max-width: 992px) {
+  .card-section .cd-1,
+  .card-section .cd-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 568px) {
+  .card-section .cd-3 .card-title,
+  .card-section .cd-3 .card-text,
+  .card-section .cd-3 .Cd-button {
+    font-size: 15px;
+  }
+  .card-section .cd-4 .card-title,
+  .card-section .cd-4 .card-text,
+  .card-section .cd-4 .Cd-button {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-section .arrow-l {
+    display: none;
+  }
+}
+
+@media (max-width: 586px) {
+  .card-section .arrow-l {
+    display: none;
+  }
+}
+
+.card-section .arrow-l {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 20px;
+}
+.card-section .arrow-l:hover {
+  width: 60px;
+  height: 60px;
+  transition: linear 0.1s;
+}
+
+/* End card-section */
 
 /*********************************/
 
-/* Start Services */
+/* Start Recent-works */
+@media (max-width: 768px) {
+  .Rw-2 {
+    display: none;
+  }
+}
 
-/* End Services */
+.Rw-1 .arrow-l {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 20px;
+  top: 50px;
+  margin: 0px 10px;
+}
+@media (min-width: 768px) {
+  .Rw-1 .arrow-l {
+    display: none;
+  }
+}
+@media (max-width: 586px) {
+  .Rw-1 .arrow-l {
+    display: none;
+  }
+}
+/* End Recent-works *
 
 /*********************************/
 
