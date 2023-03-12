@@ -544,8 +544,9 @@ header .container .logo:hover {
   font-size: 1.2rem;
   transition: linear 0.2s;
 }
-.Rw-1 .btn-primary,
-.Rw-2 .btn-primary {
+
+.Rw-1 .btn-primary
+{
   color: var(--mainText-color);
   font-weight: 100;
   background-color: var(--main-header-color);
