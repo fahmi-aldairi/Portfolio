@@ -5,6 +5,7 @@
   --mainText-color: #ffffff;
   --Sesctionbg: #42a5f58a;
   --transparent-color: rgb(15 116 143 / 40%);
+  --Secondery-text-color: #1017418c;
 }
 
 /* End variables  */
@@ -122,7 +123,7 @@ ul {
   margin: 0 auto 50px;
   max-width: 100%;
   line-height: 1.8;
-  color: var(--mainText-color);
+  color: var(--Secondery-text-color);
 }
 
 /* End Components */
@@ -157,7 +158,7 @@ header .container::after {
 }
 
 header .container .logo img {
-  height: 40px;
+  height: 45px;
 }
 
 header .container nav {
@@ -170,7 +171,7 @@ header .container nav {
 header .container nav .toggle-menu {
   color: var(--main-color);
 }
-header   .container button {
+header .container button {
   background-color: transparent;
   border: transparent;
 }
@@ -219,6 +220,10 @@ header .container nav ul li a {
   transition: 0.3s;
 }
 
+header .container nav ul li #download-icon {
+  padding: 40px 10px;
+}
+
 header .container nav ul li a:hover {
   color: var(--main-color);
   border-bottom: 1.5px solid var(--main-color);
@@ -256,6 +261,53 @@ header .container .logo:hover {
   background-color: rgb(0 0 0 / 20%);
 }
 
+.overlay-1 {
+  color: var(--mainText-color);
+  position: fixed;
+  background-color: var(--Sesctionbg);
+  backdrop-filter: blur(1px);
+  left: 95%;
+  top: 52%;
+  transform: translateY(-55px);
+  width: 5%;
+  height: 29%;
+  border-radius: 20px 0px 0px 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+#mail_side {
+  position: absolute;
+  width: 2.5rem;
+  top: 2rem;
+  left: 1rem;
+  color: var(--mainText-color);
+}
+
+#linkedin_side {
+  position: absolute;
+  width: 2.5rem;
+  top: 6.5rem;
+  left: 1rem;
+  color: var(--mainText-color);
+}
+
+#github_side {
+  position: absolute;
+  width: 2.5rem;
+  top: 11.5rem;
+  left: 1rem;
+  color: var(--mainText-color);
+}
+
+@media (max-width: 992px) {
+  .overlay-1 {
+    display: none;
+  }
+}
+
 .landing .text {
   color: var(--mainText-color);
   position: absolute;
@@ -264,38 +316,57 @@ header .container .logo:hover {
   left: 0;
   top: 45%;
   transform: translateY(-55px);
-  width: 50%;
+  width: 65%;
   padding: 30px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   text-align: center;
 }
+
+.landing img {
+  width: 300px;
+  height: 350px;
+  float: left;
+  position: absolute;
+  left: 85%;
+  bottom: -7%;
+  border: 10px solid #42a4f578;
+  border-radius: 169px;
+}
+
 
 @media (max-width: 1200px) {
   .landing .text {
     top: 40%;
-    width: 100%;
-    justify-content: center;
+    width: 70%;
   }
-  .landing .text .content {
-    width: 100%;
-  }
-}
-
-.landing img {
-  width: 250px;
-  height: 320px;
-  float: left;
-}
-
-@media (max-width: 992px) {
   .landing img {
-    width: 20vw;
-    height: 23vw;
-    float: inline-start;
-    position: absolute;
+    left: 85%;
+    bottom: -7%;
+  }
+}
+
+@media (max-width: 992px){
+  .landing .text{
+    width: 100%;
+  }
+  .landing img {
+    width: 180px;
+    height: 180px;
+    left: 40%;
+    bottom: 92%;
+  }
+}
+
+@media (max-width: 586px) {
+  .landing .text{
+    width: 100%;
+  }
+  .landing img {
+    width: 8rem;
+    height: 8rem;
     top: -50%;
-    left: 2%;
+    left: 32%;
   }
 }
 
@@ -307,9 +378,12 @@ header .container .logo:hover {
   font-size: 35px;
   color: var(--main-header-color);
   line-height: 1.5;
-  margin-bottom: 55px;
   font-weight: bolder;
 }
+.landing .text .content #Name {
+  margin-bottom: 1rem;
+}
+
 
 .landing .text .content p {
   font-size: 15px;
@@ -351,27 +425,27 @@ header .container .logo:hover {
   }
 }
 
-.card-section .cd-1 ,
-.card-section .cd-2 ,
-.card-section .cd-3 ,
+.card-section .cd-1,
+.card-section .cd-2,
+.card-section .cd-3,
 .card-section .cd-4 {
   width: 18rem;
   border-radius: 20px;
   background-color: transparent;
 }
 
-.card-section .cd-1 .card-img-top ,
-.card-section .cd-2 .card-img-top , 
-.card-section .cd-3 .card-img-top ,
+.card-section .cd-1 .card-img-top,
+.card-section .cd-2 .card-img-top,
+.card-section .cd-3 .card-img-top,
 .card-section .cd-4 .card-img-top {
   border-radius: 20px 0px;
 }
-.card-body .card-title{
+.card-body .card-title {
   color: var(--main-header-color);
 }
 
-.card-body .card-text{
-  color: white;
+.card-body .card-text {
+  color: #1017418c;
 }
 
 .card .btn-primary {
@@ -430,6 +504,10 @@ header .container .logo:hover {
   height: 60px;
   transition: linear 0.1s;
 }
+.card-section .card-body a{
+  text-decoration: none;
+  color: var(--main-color);
+}
 
 /* End card-section */
 
@@ -440,11 +518,6 @@ header .container .logo:hover {
   margin-bottom: 10rem;
 }
 
-@media (max-width: 768px) {
-  .Rw-2 {
-    display: none;
-  }
-}
 
 .Rw-1 .arrow-l {
   width: 30px;
@@ -465,8 +538,9 @@ header .container .logo:hover {
   }
 }
 
-.Rw-1 a:hover,
-.Rw-2 a:hover {
+
+.Rw-1 a:hover
+{
   font-size: 1.2rem;
   transition: linear 0.2s;
 }
@@ -479,9 +553,9 @@ header .container .logo:hover {
   box-shadow: 3px 2px #1a237e42;
 }
 
-.R-Work .Cd-button{
+.R-Work .Cd-button {
   width: 50%;
-  font-size: 15px; 
+  font-size: 15px;
   margin: 15px 0;
 }
 /* End Recent-works *
@@ -499,66 +573,66 @@ footer .container-fluid {
   position: relative;
 }
 
-footer #My-info{
+footer #My-info {
   width: 100%;
   height: 10rem;
   position: relative;
   background-color: var(--main-header-color);
 }
 
-footer #My-info .Mail{
-  position: absolute; 
-  top: 20%; 
-  left: 40%
+footer #My-info .Mail {
+  position: absolute;
+  top: 20%;
+  left: 40%;
 }
 
 footer #My-info .Mail img,
-footer #My-info .Phone img{
-  width: 1.5rem; 
-  margin-right: 0.5rem
-}
-
-@media (max-width: 586px){
-  footer #My-info .Mail img,
-footer #My-info .Phone img{
+footer #My-info .Phone img {
   width: 1.5rem;
   margin-right: 0.5rem;
-  display: none;
-}
 }
 
-footer #My-info .Mail a ,
-footer #My-info .Phone a{
-  color: var(--main-color); 
+@media (max-width: 586px) {
+  footer #My-info .Mail img,
+  footer #My-info .Phone img {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+    display: none;
+  }
+}
+
+footer #My-info .Mail a,
+footer #My-info .Phone a {
+  color: var(--main-color);
   text-decoration: none;
 }
 
-@media (max-width: 586px){
-  footer #My-info .Mail a ,
-footer #My-info .Phone a{
-  color: var(--main-color);
+@media (max-width: 586px) {
+  footer #My-info .Mail a,
+  footer #My-info .Phone a {
+    color: var(--main-color);
     text-decoration: none;
     position: relative;
     z-index: 5;
     left: 3rem;
-}
-}
-
-footer #My-info .Phone{
-  position: absolute; 
-  top: 40%; 
-  left: 40%
+  }
 }
 
-footer #My-info .COPY-R{
-  position: absolute; 
-  top: 78%; 
-  left: 32% ; 
+footer #My-info .Phone {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+footer #My-info .COPY-R {
+  position: absolute;
+  top: 78%;
+  left: 32%;
   color: var(--main-color);
 }
 
-@media (max-width: 586px){
-  footer #My-info .COPY-R{
+@media (max-width: 586px) {
+  footer #My-info .COPY-R {
     position: absolute;
     top: 87%;
     left: 24%;
@@ -568,16 +642,16 @@ footer #My-info .COPY-R{
   }
 }
 
-footer #My-info .COPY-R p{
+footer #My-info .COPY-R p {
   display: inline;
 }
 
-footer #My-info .COPY-R #My-Name{
+footer #My-info .COPY-R #My-Name {
   display: inline;
   color: var(--mainText-color);
 }
 
-footer #My-info .COPY-R  img{
+footer #My-info .COPY-R img {
   width: 1rem;
 }
 
@@ -677,7 +751,6 @@ footer #My-info .COPY-R  img{
   color: var(--mainText-color);
   text-decoration: none;
 }
-
 
 /* End Footer */
 

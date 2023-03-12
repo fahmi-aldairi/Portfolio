@@ -24,7 +24,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
   <body style="background-color: #b4e4ff" id="Home">
     <!-- Start Header -->
     <header>
@@ -33,7 +37,7 @@
           <img src="../image/FACE 3.png" alt="logo" />
         </a>
         <nav>
-          <i class="fas fa-bars toggle-menu"></i>
+          <i class="fas fa-bars toggle-menu fa-2xl"></i>
           <ul>
             <li><a href="#Home">Home</a></li>
             <li><a href="#About-Me">About-Me</a></li>
@@ -44,7 +48,8 @@
                 <a
                   href="https://drive.google.com/file/d/1PRU1xqaeU_FGUoljTxb1HA21R2-S9Epg/view?usp=share_link"
                   target="_blank"
-                  >Download-My-C.V
+                  id="download-icon"
+                  >My-C.V
                   <img
                     src="../image/8725634_cloud_download_icon (1).png"
                     alt="Download-logo"
@@ -64,10 +69,10 @@
       <div class="overlay"></div>
       <div class="text">
         <div class="content">
-          <h1>
-            Hello Evreyone! <br />
-            It's Fahmi Aldairi
-          </h1>
+          <h2>
+            Hi!<br />
+            <h1 id="Name" data-aos="zoom-in">I'm Fahmi Aldairi</h1>
+          </h2>
           <p>
             <q>
               Always be yourself, express yourself, have faith in yourself,
@@ -75,9 +80,19 @@
               it.
             </q>
           </p>
+          <a
+          href="#About-Me"
+          class="btn btn-primary Cd-button" style="background-color: #1a237e;"
+          >About-Me</a
+        >
         </div>
-        <img src="../image/IQN 1.png" alt="..." />
+        <img src="../image/IMG_20230131_061654.jpg" alt="..." />
       </div>
+    </div>
+    <div class="overlay-1">
+      <a href="mailto:F.aldairi16@gmail.com = Feedback&body = Message" target="_blank"><i class="fa-solid fa-envelope fa-2xl" id="mail_side" ></i></a>
+      <a href="https://www.linkedin.com/in/fahmialdairi/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl" id="linkedin_side"></i></a>
+      <a href="https://github.com/fahmi-aldairi" target="_blank"><i class="fa-brands fa-github fa-2xl" id="github_side"></i></a>
     </div>
     <!-- End Landing -->
     <!--////////////////////////////////-->
@@ -86,10 +101,7 @@
       <div class="main-heading" id="About-Me">
         <h2>About-Me</h2>
         <p>
-          I followed my passion as being part of thew developers society. I am
-          reliable, hard-working with strong attention to detail and eager to
-          learn about new technologies and business issues. I am able to work
-          well both on my own initiative and as part of a team .
+          I followed my passion as part of the developer's society. I am reliable, hard-working, attentive to detail, and eager to learn about new technologies and business issues. I can work well on my own initiative and as part of a team.
         </p>
       </div>
     </div>
@@ -103,7 +115,8 @@
     <div class="container">
       <div class="card-section">
         <img class="arrow-l" src="../image/arrow.png" alt="arrow-l" />
-        <div class="card cd-1 me-5 text-center">
+        <div class="card cd-1 me-5 text-center" data-aos="fade-up"
+        data-aos-duration="3000">
           <img
             class="card-img-top"
             src="../image/Html-Logo.png"
@@ -111,18 +124,12 @@
           <div class="card-body">
             <h5 class="card-title"><b>HTML</b></h5>
             <p class="card-text">
-              <b>Hypertext Markup Language</b><br />
-              Press go to see my certification
+              <a href="https://www.sololearn.com/certificates/CT-A7MAWG8M" target="_blank"><b>Press to see my certification</b></a>
             </p>
-            <a
-              href="https://www.sololearn.com/certificates/CT-A7MAWG8M"
-              target="_blank"
-              class="btn btn-primary Cd-button"
-              >Go</a
-            >
           </div>
         </div>
-        <div class="card cd-2 me-5 text-center">
+        <div class="card cd-2 me-5 text-center" data-aos="fade-up"
+        data-aos-duration="3000">
           <img
             class="card-img-top"
             src="../image/Css-Logo.png"
@@ -131,18 +138,12 @@
           <div class="card-body">
             <h5 class="card-title"><b>CSS</b></h5>
             <p class="card-text">
-              <b>Cascading Style <br/> Sheets</b> <br/>
-              Press go to see my certification
+              <a href="https://www.sololearn.com/certificates/CT-A7MAWG8M" target="_blank"><b>Press to see my certification</b></a>
             </p>
-            <a
-              href="https://www.sololearn.com/certificates/CT-TJDCTOGK"
-              target="_blank"
-              class="btn btn-primary Cd-button"
-              >Go</a
-            >
           </div>
         </div>
-        <div class="card cd-3 me-5 text-center">
+        <div class="card cd-3 me-5 text-center" data-aos="fade-up"
+        data-aos-duration="3000">
           <img
             class="card-img-top"
             src="../image/JS-Logo.png"
@@ -151,19 +152,13 @@
           <div class="card-body">
             <h5 class="card-title"><b>JS</b></h5>
             <p class="card-text" style="margin-bottom: 2.5rem;">
-              <b>Javascript</b><br />
-              Press go to see my certification
+              <a href="https://www.sololearn.com/certificates/CT-A7MAWG8M" target="_blank"><b>Press to see my certification</b></a>
             </p>
-            <a
-              href="https://www.sololearn.com/certificates/CT-TJDCTOGK"
-              target="_blank"
-              class="btn btn-primary Cd-button"
-              >Go</a
-            >
           </div>
         </div>
         <div
-          class="card cd-4 text-center"
+          class="card cd-4 text-center" data-aos="fade-up"
+          data-aos-duration="3000"
         >
           <img
             class="card-img-top"
@@ -173,15 +168,8 @@
           <div class="card-body">
             <h5 class="card-title"><b>B.S</b></h5>
             <p class="card-text" style="margin-bottom: 2.5rem;">
-              <b>BootStrap</b><br />
-              Press go to see my certification
+              <a href="https://www.sololearn.com/certificates/CT-A7MAWG8M" target="_blank"><b>Press to see my certification</b></a>
             </p>
-            <a
-              href="https://www.sololearn.com/certificates/CT-TJDCTOGK"
-              target="_blank"
-              class="btn btn-primary Cd-button"
-              >Go</a
-            >
           </div>
         </div>
       </div>
@@ -193,19 +181,19 @@
         <div class="main-heading">
           <h2>Recent-works</h2>
           <p>
-            There is here my sample of workes which always updated with my
-            finished projects
+            Here is a sample of work which constantly updated with my finished projects.
           </p>
         </div>
       </div>
       <div class="container-fluid Rw-1">
         <img class="arrow-l" src="../image/arrow.png" alt="arrow-l" />
         <div class="container text-center">
-          <div class="row mb-2">
-            <div class="col">
+          <div class="row mb-2 ">
+            <div class="col" data-aos="fade-up"
+            data-aos-duration="1000">
               <img
-                src="../image/W&M.png"
-                class="img-thumbnail w-100"
+                src="../image/Home-Page12.png"
+                class="img-thumbnail w-75"
                 alt="..."
               />
               <a
@@ -215,10 +203,10 @@
                 >Go</a
               >
             </div>
-            <div class="col">
+            <div class="col" data-aos="flip-up">
               <img
-                src="../image/HTML&CSS.png"
-                class="img-thumbnail w-100"
+                src="../image/Mockup12.png"
+                class="img-thumbnail w-75"
                 alt="..."
               />
               <a
@@ -228,59 +216,15 @@
                 >Go</a
               >
             </div>
-            <div class="col">
+            <div class="col" data-aos="fade-up"
+            data-aos-duration="1000">
               <img
                 src="../image/bootstrap.png"
-                class="img-thumbnail w-100"
+                class="img-thumbnail w-75"
                 alt="..."
               />
               <a
                 href="https://github.com/fahmi-aldairi/Bootstrap-task.git"
-                target="_blank"
-                class="btn btn-primary Cd-button"
-                >Go</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid Rw-2">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col">
-              <img
-                src="../image/C.S.png"
-                class="img-thumbnail w-100"
-                alt="..."
-              />
-              <a
-                href="#"
-                target="_blank"
-                class="btn btn-primary Cd-button"
-                >Go</a
-              >
-            </div>
-            <div class="col">
-              <img
-                src="../image/C.S.png"
-                class="img-thumbnail w-100"
-                alt="..."
-              />
-              <a
-                href="#"
-                target="_blank"
-                class="btn btn-primary Cd-button"
-                >Go</a
-              >
-            </div>
-            <div class="col">
-              <img
-                src="../image/C.S.png"
-                class="img-thumbnail w-100"
-                alt="..."
-              />
-              <a
-                href="#"
                 target="_blank"
                 class="btn btn-primary Cd-button"
                 >Go</a
@@ -296,7 +240,7 @@
       <div class="container-fluid" id="Contact">
         <div id="My-info" class="container-fluid ">
           <div class="Mail">
-            <img src="../image/mail-icon.png" alt="..."/>
+            <img src="../image/mail-icon.png" alt="..." id="mail"/>
             <a href="...">F.aldairi16@gmail.com</a>
           </div>
           <div class="Phone">
@@ -350,5 +294,9 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
