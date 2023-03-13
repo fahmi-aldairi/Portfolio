@@ -9,17 +9,17 @@ It's a Portfolio-project in (HTML, CSS & BootStrap) with skelton made using Html
 - bootstrap
 
 ## HTML & CSS
-- [***HTML***](../Html/Index.html)
-- [***CSS***](../CSS/main.css)
+- [***HTML***](./Html/index.html)
+- [***CSS***](./CSS/main.css)
 - [**live code**](https://fahmi-aldairi.github.io/Portfolio/)
 
 ## **Wireframe** 
 [***Wireframe***](https://www.figma.com/file/6yxKMtfVExgRZ8khtoH3Dt/Portfolio?node-id=0%3A1&t=vhA3AukOeS1PMnTT-1)
 
-![Image-1](../image/Wireframe.png)
+![Image-1](./image/Wireframe.png)
 
 
 ## **Mockup** 
 [***Mockupe***](https://www.figma.com/file/6yxKMtfVExgRZ8khtoH3Dt/Portfolio?node-id=0%3A1&t=vhA3AukOeS1PMnTT-1)
 
-![Image-1](../image/Mockup.png)
+![Image-1](./image/Mockup.png)
