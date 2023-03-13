@@ -133,7 +133,9 @@ ul {
 /* Start Header */
 
 header {
-  position: absolute;
+  position: fixed;
+  background-color: transparent;
+  backdrop-filter: blur(2px);
   left: 0px;
   width: 100%;
   z-index: 3;
@@ -579,6 +581,13 @@ header .container .logo:hover {
   padding-top: 5rem;
   text-align: center;
   font-size: 20px;
+}
+
+.BOX .img-content p{
+  color: #b4e4ff
+}
+.BOX .img-content a{
+  color: white; text-decoration: none;
 }
 
 .BOX:hover .img-content{
